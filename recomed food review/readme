@@ -1,0 +1,16 @@
+recomed food review
+# Lunch Dellma
+### How To Run 
+1- ```python -m pip install -r requirement.txt```
+2- ```python -m spacy download en_core_web_sm```
+
+
+### To Run the streamlit 
+1- got to project folder path.
+2- run the following command.
+```streamlit run streamlit.py```
+
+
+### Files
+1- "Reccomend.ipynb" : has the classification and clustering problems.
+2- "FS-NER.ipynb"    : has the Few-shot NER code.
