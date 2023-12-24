@@ -1,0 +1,340 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/umer/ontologies/2022/6/depression_owl"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/umer/ontologies/2022/6/depression_owl">
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#Person"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#age_group"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#buildings"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#city"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#clinic"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#country"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#disease"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#disease_definition"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#doctor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#hospital"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#medical_speciality"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#others"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#patient"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#places"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#reasons"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#symptoms"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#treatment"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#aged_as"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#cause"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#defined_as"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#exist_in"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#exist_in_city"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#feel_with"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#in_city"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#indicate_to"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#live_in"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#part_of"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#specialty_in"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#suggest"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#treat"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#treat_with"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#work_in"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#work_in_clince"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#work_in_hospital"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#age_group"/>
+        <Class IRI="#patient"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#buildings"/>
+        <Class IRI="#places"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#city"/>
+        <Class IRI="#places"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#clinic"/>
+        <Class IRI="#buildings"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#country"/>
+        <Class IRI="#places"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#disease_definition"/>
+        <Class IRI="#disease"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#doctor"/>
+        <Class IRI="#Person"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#hospital"/>
+        <Class IRI="#buildings"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#medical_speciality"/>
+        <Class IRI="#doctor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#patient"/>
+        <Class IRI="#Person"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#reasons"/>
+        <Class IRI="#disease"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#symptoms"/>
+        <Class IRI="#disease"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#treatment"/>
+        <Class IRI="#others"/>
+    </SubClassOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#exist_in_city"/>
+        <ObjectProperty IRI="#exist_in"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#in_city"/>
+        <ObjectProperty IRI="#exist_in"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#part_of"/>
+        <ObjectProperty IRI="#exist_in"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#work_in_clince"/>
+        <ObjectProperty IRI="#work_in"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#work_in_hospital"/>
+        <ObjectProperty IRI="#work_in"/>
+    </SubObjectPropertyOf>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#aged_as"/>
+        <Class IRI="#patient"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#cause"/>
+        <Class IRI="#reasons"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#defined_as"/>
+        <Class IRI="#disease"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#exist_in"/>
+        <Class IRI="#places"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#exist_in_city"/>
+        <Class IRI="#hospital"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#feel_with"/>
+        <Class IRI="#patient"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#has"/>
+        <Class IRI="#hospital"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#in_city"/>
+        <Class IRI="#clinic"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#indicate_to"/>
+        <Class IRI="#reasons"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#live_in"/>
+        <Class IRI="#Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#part_of"/>
+        <Class IRI="#city"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#specialty_in"/>
+        <Class IRI="#doctor"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#suggest"/>
+        <Class IRI="#medical_speciality"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#treat"/>
+        <Class IRI="#medical_speciality"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#treat_with"/>
+        <Class IRI="#disease"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#work_in"/>
+        <Class IRI="#doctor"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#work_in_clince"/>
+        <Class IRI="#doctor"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#work_in_hospital"/>
+        <Class IRI="#doctor"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#aged_as"/>
+        <Class IRI="#age_group"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#cause"/>
+        <Class IRI="#disease"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#defined_as"/>
+        <Class IRI="#disease_definition"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#exist_in"/>
+        <Class IRI="#places"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#exist_in_city"/>
+        <Class IRI="#city"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#feel_with"/>
+        <Class IRI="#symptoms"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#has"/>
+        <Class IRI="#medical_speciality"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#in_city"/>
+        <Class IRI="#city"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#indicate_to"/>
+        <Class IRI="#disease"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#live_in"/>
+        <Class IRI="#city"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#part_of"/>
+        <Class IRI="#country"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#specialty_in"/>
+        <Class IRI="#medical_speciality"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#suggest"/>
+        <Class IRI="#treatment"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#treat"/>
+        <Class IRI="#disease"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#treat_with"/>
+        <Class IRI="#treatment"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#work_in"/>
+        <Class IRI="#buildings"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#work_in_clince"/>
+        <Class IRI="#clinic"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#work_in_hospital"/>
+        <Class IRI="#hospital"/>
+    </ObjectPropertyRange>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
